@@ -5,7 +5,7 @@ const path = require("path");
 const app = express();
 
 app.get("/users", (req, res) => {
-  var data = require(path.join(__dirname, "data.json"));
+  var data = require(path.join(__dirname, "public/data.json"));
   res.json(data);
 });
 
